@@ -15,7 +15,7 @@
 	
     <modules>
         <module>lab01-spring-autowire</module>
-        
+        <module>lab01-springmvc-annotation</module>
     </modules>
 
 </project>
