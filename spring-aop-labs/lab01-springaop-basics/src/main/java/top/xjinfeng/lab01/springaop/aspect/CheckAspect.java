@@ -29,26 +29,28 @@ public class CheckAspect {
         //1
     }
 
-//    @Before(value = "execution(* com.example.demo.aspect.TargetClass.getIndex(..)) && target(bean) && args(s)", argNames = "joinPoint,bean,s")
-//    public void beforeWithAnnotation(JoinPoint joinPoint,Object bean, Object s){
-//        System.out.println("前置通知");
-//        System.out.println(s); //1
-//    }
+    @Before(value = "execution(* top.xjinfeng.lab01.springaop.aspect.TargetClass.getIndex(..)) && target(bean) && args(s)", argNames = "joinPoint,bean,s")
+    public void beforeWithAnnotation(JoinPoint joinPoint,Object bean, Object s){
+        System.out.println("前置通知");
+        System.out.println(s);
+        //1
+    }
 
-//    @Before(value = "com.example.demo.controller.DemoController.get() && args(s)", argNames = "joinPoint,s")
-//    public void beforeWithAnnotation(JoinPoint joinPoint, Object s){
-//        System.out.println("前置通知");
-//        System.out.println(s); //1
-//    }
+    @Before(value = "top.xjinfeng.lab01.springaop.controller.DemoController.get() && args(s)", argNames = "joinPoint,s")
+    public void beforeWithAnnotation(JoinPoint joinPoint, Object s){
+        System.out.println("前置通知");
+        System.out.println(s);
+        //1
+    }
 
-//    @Before(value = "top.xjinfeng.lab01.springaop.controller.DemoController.get() && args(java.lang.Object)", argNames = "joinPoint")
-//    public void beforeWithAnnotation(JoinPoint joinPoint){
-//        System.out.println("前置通知");
-//    }
+    @Before(value = "top.xjinfeng.lab01.springaop.controller.DemoController.get() && args(java.lang.Object)", argNames = "joinPoint")
+    public void beforeWithAnnotation(JoinPoint joinPoint){
+        System.out.println("前置通知");
+    }
 
     /**
      *  如果设置argNames 必须要pointcut表达式要有args(s)，argNames也要包含returning的sp El表达式，用逗号分割
-     *  @AfterReturning 和 AfterThrowing 同时只能触发一个
+     *  <code>@AfterReturning<code/> 和 <code>@AfterThrowing<code/> 同时只能触发一个
      * @param joinPoint
      * @param b
      * @param s

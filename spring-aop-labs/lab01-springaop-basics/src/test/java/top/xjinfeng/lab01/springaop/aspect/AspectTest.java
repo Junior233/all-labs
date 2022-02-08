@@ -26,7 +26,7 @@ public class AspectTest {
     }
 
     /**
-     *  注意 下面的测试，注释掉{@link com.example.demo.aspect.CheckApsect}类中的@Around注解以及其修饰的方法
+     *  注意 下面的测试，注释掉{@link top.xjinfeng.lab01.springaop.aspect.CheckAspect}类中的@Around注解以及其修饰的方法
      *
      */
 
