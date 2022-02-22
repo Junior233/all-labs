@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import top.xjinfeng.lab01.springmvc.annotation.model.Car;
 import top.xjinfeng.lab01.springmvc.annotation.model.User;
 
+import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -34,7 +35,8 @@ public class TestController {
      * {"user":{"name":null,"age":null},"car":{"name":null,"cost":null}}
      */
     @GetMapping("/test")
-    public Map<String, Object> test(User user, Car car){
+    public Map<String, Object> test(User user, Car car, HttpSession session){
+//        session.setAttribute("bb","bb");
         Map<String, Object> map =  new HashMap<>(2);
         map.put("user", user);
         map.put("car", car);
