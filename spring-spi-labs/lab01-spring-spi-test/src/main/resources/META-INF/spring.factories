@@ -1,0 +1,4 @@
+org.springframework.core.convert.converter.Converter=\
+top.xjinfeng.converter.CustomConverter
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+top.xjinfeng.config.CustomAutoEnableConfig

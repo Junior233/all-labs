@@ -4,16 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>top.xjinfeng.spring.labs</groupId>
-    <artifactId>all-labs-parent</artifactId>
+    <parent>
+        <groupId>top.xjinfeng.spring.labs</groupId>
+		 <artifactId>all-labs-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>spring-spi-labs</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0-SNAPSHOT</version>
 	
     <modules>
-        <module>spring-annotation-labs</module>
-        <module>spring-aop-labs</module>
-        <module>spring-config-labs</module>
-        <module>spring-spi-labs</module>
+        <module>lab01-spring-convert-spi</module>
+        <module>lab01-spring-spi-test</module>
     </modules>
 
 </project>
